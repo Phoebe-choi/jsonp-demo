@@ -201,7 +201,7 @@ window[callback] = function(result){ //定义函数
 >函数名.call(undefined,'你要的数据')<br>
 >函数名('你要的数据')
 ```
-//服务器端只需要这样就可以了，后台并不关心你写的是什么函数名字
+//服务器端只需要这样就可以了，后台并不关心你写的函数名字
 response.write(`
    ${query.callback}.call(undefined, 'success')
 `)
